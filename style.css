@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Serif Pro', serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* ################### UTILITY CLASSES ################### */
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+/* ####################### HEADER CONTENT ################# */
+
+.header{
+    width: 100%;
+    background-color: #ffdf92;
+    transform: translateX(-150%);
+    animation: animate-header .5s forwards .3s ease-in-out;
+}
+
+@keyframes animate-header{
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.header .header-content{
+    width: 100%;
+    padding: 5rem 5rem 10rem 5rem;
+}
+
+.header .header-logo{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding-top: 3.8rem;
+    transform: translateX(-150%);
+    animation: animate-header-logo 1s forwards .6s ease-in-out;
+}
+
+@keyframes animate-header-logo{
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.header-logo .img-logo{
+    width: 3%;
+}
+
+.header-logo .img-logo img{
+    display: inline-block;
+    width: 100%;
+}
+
+.header .header-logo a{
+    display: block;
+    text-decoration: none;
+    color: #422f01;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    top: 12px;
+}
+
+.header-content h1{
+    margin-top: 7rem;
+    color: #422f01;
+    font-size: 8.5rem;
+    line-height: 9rem;
+    transform: translateX(500%);
+    animation: animate-hone 1.5s forwards 1.15s ease-in-out;
+}
+
+@keyframes animate-hone{
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.header-content .btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #422f01;
+    padding: 1em 1.9em;
+    border-radius: 100px;
+    margin-top: 6rem;
+    transition: background .4s ease-in-out;
+    transform: translateX(-250%);
+    animation: animate-btn .5s forwards 1.5s ease-in-out;
+}
+
+@keyframes animate-btn{
+    100%{
+        transform: translatex(0);
+    }
+}
+
+.header-content .btn:hover{
+    background-color: #444;
+}
+
+/* ############### ABOUT CONTENT ################# */
+.main{
+    width: 100%;
+}
+
+.main .section-about{
+    width: 100%;
+    background-color: #ffe9b4;
+}
+
+.about-us{
+    display: flex;
+    width: 100%;
+    padding: 5rem;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    width: 45%;
+    transform: translateX(-150%);
+    animation: animate-text 1s forwards 2s ease-in-out;
+}
+
+@keyframes animate-text{
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.about-content h2{
+    font-size: 5rem;
+    line-height: 4.5rem;
+    margin-bottom: 2.5rem;
+    color: #422f01;
+}
+
+.about-content p{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.about-img{
+    width: 55%;
+    transform: translateX(150%);
+    animation: animate-img 1s forwards 2s ease-in-out;
+}
+
+@keyframes animate-img{
+    100%{
+        transform: translate(0);
+    }
+}
+
+.about-img img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* #################### SERVICES CONTENT ################### */
+
+.main .section-services{
+    width: 100%;
+    background-color: #ffdf92;
+}
+
+.services-container{
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.section-services h1{
+    font-size: 5rem;
+    text-align: center;
+    color: #422f01;
+}
+
+.services{
+    display: flex;
+    width: 100%;
+    padding: 5rem;
+}
+
+.services-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    padding: 5rem;
+}
+
+.services-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    padding: 5rem;
+}
+
+.services-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    padding: 5rem;
+}
+
+.services-logo{
+    margin-bottom: 3rem;
+}
+
+.services-logo img{
+    display: block;
+    width: 100%;
+}
+
+.services-logo .dollar{
+    width: 150px;
+}
+
+.services-logo .money{
+    width: 230px;
+}
+
+.services-logo .selling-graph{
+    width: 150px;
+}
+
+.services-text{
+    text-align: center;
+}
+
+.services-text h3{
+    font-size: 2.2rem;
+    color: #422f01;
+    margin-bottom: 1rem;
+}
+
+.services-text p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+/* ################### TESTIMONIALS CONTENT ################# */
+.testimonials-section{
+    width: 100%;
+    background-color: #ffe9b4;
+}
+
+.testimonials-container{
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.testimonials-container h1{
+    color: #422f01;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.testimonials{
+    display: flex;
+    width: 100%;
+    padding: 5rem;
+}
+
+.testimonials-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    padding: 3rem;
+}
+
+.testimonials-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    padding: 3rem;
+}
+
+.testimonials-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    padding: 3rem;
+}
+
+.testimonials-img img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 2rem;
+}
+
+.testimonials-text{
+    text-align: center;
+}
+
+.testimonials-text h3{
+    font-size: 2.2rem;
+    color: #422f01;
+    margin-bottom: 1rem;
+}
+
+.testimonials-text p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+/* ##################### SELLING CONTENT ###################### */
+.selling-section{
+    width: 100%;
+    background-color: #ffdf92;
+}
+
+.selling-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10rem 0;
+}
+
+.selling-img{
+    width: 50%;
+    padding: 3rem;
+}
+
+.selling-img img{
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    overflow: visible;
+    position: relative;
+    top: 0;
+    left: 20%;
+}
+
+.selling-text{
+    width: 50%;
+    padding: 5.5rem;
+}
+
+.selling-text h2{
+    font-size: 5rem;
+    font-weight: 600;
+    color: #422f01;
+}
+
+/* ###################### CONTACT CONTENT ##################### */
+.contact-section{
+    width: 100%;
+    background-color: #ffe9b4;
+}
+
+.contact-us{
+    width: 100%;
+}
+
+.contact-img{
+    width: 100%;
+}
+
+.contact-img img{
+    display: block;
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    object-position: left;
+}
+
+.contact-description h1{
+    font-size: 5rem;
+    font-weight: 600;
+    color: #422f01;
+    margin-top: 4rem;
+}
+
+.contact{
+    display: flex;
+    width: 100%;
+}
+
+.contact h3{
+    font-size: 2.2rem;
+    color: #422f01;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #555;
+
+}
+
+.contact-one{
+    width: 33.3%;
+    padding: 3rem 1rem;
+}
+
+.contact-two{
+    width: 33.3%;
+    padding: 3rem 1rem;
+}
+
+.contact-three{
+    width: 33.3%;
+    padding: 3rem 1rem;
+}
+
+/* ################### SCROLLBAR ################### */
+::-webkit-scrollbar{
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(228, 12%, 25%);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: hsl(228, 8%, 35%);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(228, 8%, 45%);
+}
+
+/* ############ SELECTION ############## */
+::selection{
+    background-color: #F7F6EE;
+}
+
+/* ##################### MEDIA QUERIES #################### */
+@media screen and (max-width: 768px){
+    html{
+        font-size: 58%;
+    }
+
+    .header-logo .img-logo{
+        width: 7%;
+    }
+
+    .about-us{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-content,
+    .about-img{
+        width: 100%;
+    }
+
+    .services{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-one,
+    .services-two,
+    .services-three{
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .testimonials{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+
+    .testimonials-one,
+    .testimonials-two,
+    .testimonials-three{
+        width: 100%;
+    }
+
+    .selling-container{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .selling-img,
+    .selling-text{
+        width: 100%;
+    }
+
+    .contact{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-one,
+    .contact-two,
+    .contact-three{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    html{
+        font-size: 55%;
+    }
+
+    .header .header-content{
+        padding-bottom: 5rem;
+    }
+
+    .header .header-logo{
+        padding-top: 0rem;
+        gap: 0;
+    }
+
+    .header-logo .img-logo{
+        width: 12%;
+    }
+
+    .header-content .header-logo a{
+        top: 5px;
+    }
+
+    .header-content h1 br{
+        display: none;
+    }
+
+    .header-content h1{
+        font-size: 4.12rem;
+        line-height: 6.5rem;
+        margin-top: 4rem;
+    }
+
+    .header-content a{
+        padding: 0.5em 1.2em;
+    }
+
+    /* ############## ABOUT CONTENT ########## */
+    .about-us{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-content{
+        display: block;
+        width: 100%;
+        padding: 3rem;
+        text-align: center;
+    }
+
+    .about-content h2{
+        font-size: 3.95rem;
+        font-weight: 600;
+    }
+
+    .about-content p{
+        padding-bottom: 2rem;
+    }
+
+    .about-img{
+        width: 100%;
+    }
+
+    /* ########### SERVICES CONTENT ############# */
+    .services-container h1{
+        font-weight: 600;
+        font-size: 4.5rem;
+    }
+    .services{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .services-one{
+        width: 100%;
+    }
+
+    .services-two{
+        width: 100%;
+    }
+
+    .services-three{
+        width: 100%;
+    }
+
+    .services-text h3{
+        font-size: 2.3rem;
+    }
+
+    .services-text p{
+        font-size: 1.7rem;
+    }
+
+    /* ############# TESTIMONIALS CONTENT ########## */
+    .testimonials-container h1{
+        font-weight: 600;
+        font-size: 4.5rem;
+    }
+
+    .testimonials{
+        display: block;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .testimonials-one{
+        width: 100%;
+    }
+
+    .testimonials-two{
+        width: 100%;
+    }
+
+    .testimonials-three{
+        width: 100%;
+    }
+
+    .testimonials-text h3{
+        font-size: 2.3rem;
+    }
+
+    .testimonials-text p{
+        font-size: 1.7rem;
+    }
+
+    /* ########### SELLING CONTENT ########### */
+    .selling-container{
+        display: block;
+        width: 100%;
+    }
+
+    .selling-img{
+        width: 100%;
+        padding-top: 4rem;
+    }
+
+    .selling-img img{
+        width: 250px;
+        height: 250px;
+        left: 8%;
+    }
+
+    .selling-text{
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+
+    .selling-text h2{
+        font-size: 3.57rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    /* ################## CONTACT CONTENT ############# */
+    .contact-description h1{
+        font-size: 4.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .contact{
+        display: block;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .contact-one{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-two{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-three{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact h3{
+        font-size: 2.3rem;
+    }
+
+    .contact p{
+        font-size: 1.7rem;
+    }
+}
